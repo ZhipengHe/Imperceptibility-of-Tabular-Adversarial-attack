@@ -1,0 +1,9 @@
+./tree_graphs
+/tree_graphs
+tree_graphs
+
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+
+.DS_Store
