@@ -1,9 +1,10 @@
 # Investigating Imperceptibility of Adversarial Attacks on Tabular Data: An Empirical Analysis
 
+This repository contains the code for the paper "Investigating Imperceptibility of Adversarial Attacks on Tabular Data: An Empirical Analysis" by Zhipeng He, Chun Ouyang, Laith Alzubaidi, Alistair Barros and Catarina Moreira. The paper is accepted at journal [Intelligent Systems with Applications](https://www.sciencedirect.com/journal/intelligent-systems-with-applications). The preprint version of the paper can be found on [arXiv](https://arxiv.org/abs/2407.11463).
 
 ## Abstract
 
-Adversarial attacks are a potential threat to machine learning models, as they can cause the model to make incorrect predictions by introducing imperceptible perturbations to the input data. Adversarial attacks are extensively explored in the literature for image data but not for tabular data, which is low-dimensional and heterogeneous. To address this gap, we propose a set of properties for evaluating the imperceptibility of adversarial attacks on tabular data. These properties are defined to capture four perspectives of perturbed data: *proximity* to the original input, *sparsity* of alterations, *deviation* to datapoints in the original dataset, and *sensitivity* of altering sensitive features. We evaluate the performance and imperceptibility of seven white-box adversarial attack methods and their variants using different machine learning models on tabular data. As an insightful finding from our evaluation, it is challenging to craft adversarial examples that are both the most effective and least perceptible due to a trade-off between imperceptibility and performance. Furthermore, optimization-based attacks, such as the C\&W $\ell_2$ attack, are preferred as the primary choice for crafting imperceptible adversarial examples on tabular data.
+Adversarial attacks are a potential threat to machine learning models by causing incorrect predictions through imperceptible perturbations to the input data. While these attacks have been extensively studied in unstructured data like images, applying them to tabular data, poses new challenges. These challenges arise from the inherent heterogeneity and complex feature interdependencies in tabular data, which differ from the image data. To account for this distinction, it is necessary to establish tailored imperceptibility criteria specific to tabular data. However, there is currently a lack of standardised metrics for assessing the imperceptibility of adversarial attacks on tabular data. To address this gap, we propose a set of key properties and corresponding metrics designed to comprehensively characterise imperceptible adversarial attacks on tabular data. These are: proximity to the original input, sparsity of altered features, deviation from the original data distribution, sensitivity in perturbing features with narrow distribution, immutability of certain features that should remain unchanged, feasibility of specific feature values that should not go beyond valid practical ranges, and feature interdependencies capturing complex relationships between data attributes. We evaluate the imperceptibility of five adversarial attacks, including both bounded attacks and unbounded attacks, on tabular data using the proposed imperceptibility metrics. The results reveal a trade-off between the imperceptibility and effectiveness of these attacks. The study also identifies limitations in current attack algorithms, offering insights that can guide future research in the area. The findings gained from this empirical analysis provide valuable direction for enhancing the design of adversarial attack algorithms, thereby advancing adversarial machine learning on tabular data.
 
 
 ## Data Profiling
@@ -39,5 +40,16 @@ Adversarial attacks are a potential threat to machine learning models, as they c
 
 - Evaluated in [3_AE_performance_metrics.ipynb](./3_AE_performance_metrics.ipynb)
 - Raw results can be found in folder [results](./results/)
-- formatted result tables can be found in [Supplementary_Material](./Supplementary_Material.pdf) and [qualitative analysis](./qualitative_analysis.md)
-- Some visualisations are produced in [5_visualisation.ipynb](./5_visualisation.ipynb) and [5_visualisation2.ipynb](./5_visualisation2.ipynb). The visualisations are saved in folder [Visualisation](./Visualisation/)
+- formatted result tables of qualitative analysis can be found in [qualitative analysis](./qualitative_analysis.md)
+- Some visualisations are produced in [5_visualisation.ipynb](./5_visualisation.ipynb), [5_visualisation2.ipynb](./5_visualisation2.ipynb) and [5_visualisation_poster.ipynb](./5_visualisation_poster.ipynb). The visualisations are saved in folder [Visualisation](./Visualisation/).
+
+## Poster
+
+- The poster can be found in [Poster](./Poster/)
+- Check more visualisations in markdown file [visualisation.md](./visualisation.md)
+
+## XAMI Lab
+
+- [XAMI Lab](https://www.xami-lab.org/)
+
+
