@@ -48,7 +48,7 @@ The following visualisation shows the deviation of adversarial examples generate
 
 ### Visualisation 5: Imperceptibility of Adversarial Attacks on Tabular Data - Sensitivity in Perturbing Features with Narrow Distribution (Sensitivity)
 
-The following visualisation shows the sensitivity of adversarial attacks in perturbing features with narrow distribution. The sensitivity is calculated as the percentage of features with a narrow distribution that are altered in the adversarial example.
+The following visualisation shows the sensitivity of adversarial attacks in perturbing features with narrow distribution. 
 
 ![Sensitivity in Perturbing Features with Narrow Distribution](./Visualisation/sensitivity_rgb.png)
 
@@ -92,3 +92,30 @@ We compare the successful adversarial examples vs unsuccessful adversarial examp
 #### Sensitivity
 
 ![Trade-off - Sensitivity](./Visualisation/sensitivity_boxplot.png)
+
+
+
+### Visualisation 9: Two types of adversarial attacks on tabular data
+
+Two types of adversarial attacks on tabular data are evaluated: bounded attacks and unbounded attacks. The following visualisation shows the difference in terms of the definition for two types of attacks.
+
+#### Bounded Attacks
+
+
+Bounded attacks impose upper bounded constraint $\epsilon$ on the magnitude of attack perturbation. The goal is to find an adversarial example $\bm{x}^{adv}$, which has perturbation $\bm{\delta}$, within the budget $\epsilon$, to an input $x$ that misleads the prediction by maximising the loss function $\mathcal{L}$ of the machine learning model being attacked. 
+
+$$ \max{\mathcal{L}(f(\bm{x}^{adv}),y)} \quad \text{subject to~} \Vert\bm{\delta}\Vert \leq \epsilon$$
+
+![Bounded Attacks](./Visualisation/bounded_attack.png)
+
+#### Unbounded Attacks
+
+Unbounded attacks attempt to minimise the distance between input $\bm{x}$ and adversarial example $\bm{x}^{adv}$ to obtain the minimal perturbation $\bm{\delta}$ without constraints on the magnitude of attack perturbation.
+
+$$
+\min{\Vert\bm{\delta}\Vert} \quad \text{subject to }  f(\bm{x}^{adv})\neq y
+$$
+
+![Unbounded Attacks](./Visualisation/unbounded_attack.png)
+
+
