@@ -43,10 +43,11 @@ Adversarial attacks are a potential threat to machine learning models by causing
 - formatted result tables of qualitative analysis can be found in [qualitative analysis](./qualitative_analysis.md)
 - Some visualisations are produced in [5_visualisation.ipynb](./5_visualisation.ipynb), [5_visualisation2.ipynb](./5_visualisation2.ipynb) and [5_visualisation_poster.ipynb](./5_visualisation_poster.ipynb). The visualisations are saved in folder [Visualisation](./Visualisation/).
 
-## Poster
+## $\LaTeX$ Poster for ADSN 2024
 
-- The poster can be found in [Poster](./Poster/)
-- Check more visualisations in markdown file [visualisation.md](./visualisation.md)
+- The poster PDF file can be found in [Poster/ADSN_2024_Poster.pdf](./Poster/ADSN_2024_Poster.pdf)
+- Created by $\LaTeX$ in [Poster/LaTex](./Poster/LaTex/). Inspired by [baposter template](https://www.overleaf.com/latex/templates/baposter-template/fjrfjwqcpyzq) and [SuperBruceJia's poster on GitHub](https://github.com/SuperBruceJia/Poster_Template/tree/main/PS-FCN_Poster_LaTex).
+- Due to poster page limit, some details are omitted in the poster. Please refer to the paper for more details. Check more visualisations in markdown file [visualisation.md](./visualisation.md)
 
 ## XAMI Lab
 
